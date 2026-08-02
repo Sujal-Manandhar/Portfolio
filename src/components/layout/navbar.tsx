@@ -46,9 +46,7 @@ export function Navbar() {
             <ul className="flex items-center gap-7 xl:gap-9">
               {NAV_ITEMS.map((item) => {
                 const linkHref =
-                  item.href.startsWith("#") && pathname !== "/"
-                    ? `/${item.href}`
-                    : item.href;
+                  item.href.startsWith("#") && pathname !== "/" ? `/${item.href}` : item.href;
                 return (
                   <li key={item.href}>
                     <a

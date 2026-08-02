@@ -40,8 +40,6 @@ export interface SkillGroup {
   skills: string[];
 }
 
-
-
 export interface BlogPost {
   slug: string;
   title: string;

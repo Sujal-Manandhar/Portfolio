@@ -69,9 +69,7 @@ export function MobileMenu({ open, onClose, activeSection }: MobileMenuProps) {
             <ul className="flex flex-col gap-1">
               {NAV_ITEMS.map((item, index) => {
                 const linkHref =
-                  item.href.startsWith("#") && pathname !== "/"
-                    ? `/${item.href}`
-                    : item.href;
+                  item.href.startsWith("#") && pathname !== "/" ? `/${item.href}` : item.href;
                 return (
                   <motion.li
                     key={item.href}

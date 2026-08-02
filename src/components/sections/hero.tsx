@@ -21,10 +21,7 @@ export function Hero() {
   const typed = useTypewriter(PERSON.roles);
 
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden pt-28 pb-12 lg:pt-28 lg:pb-16"
-    >
+    <section id="home" className="relative overflow-hidden pt-28 pb-12 lg:pt-28 lg:pb-16">
       <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,20 +32,15 @@ export function Hero() {
           }}
         >
           <h1 className="text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl xl:text-5xl">
-            Hi, I&apos;m{" "}
-            <span className="text-gradient-brand">{PERSON.name}</span>
+            Hi, I&apos;m <span className="text-gradient-brand">{PERSON.name}</span>
             <br />
             <span className="mt-3 inline-block whitespace-nowrap text-3xl font-bold sm:text-4xl xl:text-5xl">
               a {typed}
-              <span className="text-brand animate-blink ml-1 font-light">
-                |
-              </span>
+              <span className="text-brand animate-blink ml-1 font-light">|</span>
             </span>
           </h1>
 
-          <p className="text-body mt-7 max-w-xl text-lg leading-relaxed">
-            {PERSON.intro}
-          </p>
+          <p className="text-body mt-7 max-w-xl text-lg leading-relaxed">{PERSON.intro}</p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <BrandButton asChild size="lg">
@@ -56,12 +48,7 @@ export function Hero() {
             </BrandButton>
 
             <BrandButton asChild variant="neu" size="lg">
-              <a
-                href="/cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download="cv.pdf"
-              >
+              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" download="cv.pdf">
                 Download CV
               </a>
             </BrandButton>
