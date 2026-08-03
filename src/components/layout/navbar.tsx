@@ -67,7 +67,7 @@ export function Navbar() {
           <div className="ml-auto flex shrink-0 items-center gap-3 lg:ml-6">
             <ThemeSwitcher />
             <BrandButton asChild variant="neu" size="sm" className="hidden sm:inline-flex">
-              <a href={pathname !== "/" ? "/#contact" : "#contact"}>Hire me</a>
+              <a href={pathname !== "/" ? "/#contact" : "#contact"}>Contact me</a>
             </BrandButton>
             <button
               type="button"

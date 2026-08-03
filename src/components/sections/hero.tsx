@@ -44,7 +44,7 @@ export function Hero() {
 
           <div className="mt-9 flex flex-wrap gap-4">
             <BrandButton asChild size="lg">
-              <a href="#contact">Hire me</a>
+              <a href="#contact">Contact me</a>
             </BrandButton>
 
             <BrandButton asChild variant="neu" size="lg">
