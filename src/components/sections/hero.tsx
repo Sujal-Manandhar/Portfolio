@@ -34,9 +34,9 @@ export function Hero() {
           <h1 className="text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl xl:text-5xl">
             Hi, I&apos;m <span className="text-gradient-brand">{PERSON.name}</span>
             <br />
-            <span className="mt-3 inline-block whitespace-nowrap text-3xl font-bold sm:text-4xl xl:text-5xl">
+            <span className="relative mt-3 inline-block whitespace-nowrap pr-4 text-3xl font-bold sm:text-4xl xl:text-5xl">
               a {typed}
-              <span className="text-brand animate-blink ml-1 font-light">|</span>
+              <span className="text-brand animate-blink blink-cursor font-light">|</span>
             </span>
           </h1>
 

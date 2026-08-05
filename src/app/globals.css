@@ -254,6 +254,12 @@
   }
 }
 
+/* Blink cursor: absolutely positioned so it never shifts sibling text */
+@utility blink-cursor {
+  position: absolute;
+  margin-left: 0.15em;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

@@ -1,13 +1,17 @@
-import { BackToTop } from "@/components/layout/back-to-top";
-import { Footer } from "@/components/layout/footer";
+import dynamic from "next/dynamic";
+
 import { Navbar } from "@/components/layout/navbar";
 import { Preloader } from "@/components/layout/preloader";
-import { Blog } from "@/components/sections/blog";
-import { Contact } from "@/components/sections/contact";
 import { Hero } from "@/components/sections/hero";
-import { Portfolio } from "@/components/sections/portfolio";
-import { Resume } from "@/components/sections/resume";
-import { Services } from "@/components/sections/services";
+
+// Below-fold sections: lazily loaded after the critical above-fold paint
+const Services = dynamic(() => import("@/components/sections/services").then((m) => m.Services));
+const Portfolio = dynamic(() => import("@/components/sections/portfolio").then((m) => m.Portfolio));
+const Resume = dynamic(() => import("@/components/sections/resume").then((m) => m.Resume));
+const Blog = dynamic(() => import("@/components/sections/blog").then((m) => m.Blog));
+const Contact = dynamic(() => import("@/components/sections/contact").then((m) => m.Contact));
+const Footer = dynamic(() => import("@/components/layout/footer").then((m) => m.Footer));
+const BackToTop = dynamic(() => import("@/components/layout/back-to-top").then((m) => m.BackToTop));
 
 export default function Home() {
   return (

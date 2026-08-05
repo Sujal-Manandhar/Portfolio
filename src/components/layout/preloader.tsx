@@ -5,14 +5,23 @@ import { useEffect, useState } from "react";
 
 import { PERSON } from "@/constants/site";
 
-/** Brief brand loader shown on first client paint. */
+/** Brief brand loader — only shown on the very first visit per session. */
 export function Preloader() {
-  const [visible, setVisible] = useState(true);
+  // Skip entirely on repeat visits within the same session
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
+    const seen = sessionStorage.getItem("preloader-seen");
+    if (seen) return false;
+    sessionStorage.setItem("preloader-seen", "1");
+    return true;
+  });
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setVisible(false), 900);
+    if (!visible) return;
+    // 350ms display + 250ms fade = LCP unblocked well under 600ms total
+    const timer = window.setTimeout(() => setVisible(false), 350);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [visible]);
 
   return (
     <AnimatePresence>
@@ -21,7 +30,7 @@ export function Preloader() {
           className="bg-background fixed inset-0 z-[60] flex items-center justify-center"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
           <div className="flex flex-col items-center gap-5">
             <motion.span
