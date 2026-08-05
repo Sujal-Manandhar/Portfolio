@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
           understanding a few core UI/UX fundamentals, you can drastically improve the quality of
           your applications.
         </p>
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">Visual Hierarchy</h2>
+        <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Visual Hierarchy</h2>
         <p className="leading-relaxed">
           Visual hierarchy is the arrangement of elements in a way that implies importance. Users
           shouldn't have to guess where to look—your design should guide their eyes naturally.
@@ -136,7 +136,7 @@ export const BLOG_POSTS: BlogPost[] = [
           a bright, solid button), while secondary actions remain subtle (like a text link). Use
           larger, bolder fonts for headings and smaller, lighter fonts for body text.
         </p>
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">Whitespace is Your Friend</h2>
+        <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Whitespace is Your Friend</h2>
         <p className="leading-relaxed">
           One of the most common mistakes developers make is cramming too much information onto a
           single screen. Whitespace (or negative space) is the empty space between and around
@@ -146,7 +146,7 @@ export const BLOG_POSTS: BlogPost[] = [
           Proper use of whitespace improves readability, reduces cognitive load, and creates a sense
           of elegance and simplicity. Don't be afraid to increase your padding and margins!
         </p>
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">Consistency is Key</h2>
+        <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Consistency is Key</h2>
         <p className="leading-relaxed">
           A predictable interface is a user-friendly interface. Consistency means using the same
           colors, fonts, button styles, and spacing rules throughout your entire application.
@@ -156,7 +156,7 @@ export const BLOG_POSTS: BlogPost[] = [
           same way on the settings page. Using a design system or component library (like Radix UI
           or Tailwind UI) is a fantastic way to enforce consistency automatically.
         </p>
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">
+        <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
           Accessibility (a11y) is Non-Negotiable
         </h2>
         <p className="leading-relaxed">
@@ -175,7 +175,7 @@ export const BLOG_POSTS: BlogPost[] = [
             <code>&lt;div onClick=...&gt;</code>).
           </li>
         </ul>
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">Conclusion</h2>
+        <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Conclusion</h2>
         <p className="leading-relaxed">
           Mastering basic UI/UX principles will elevate your work from "functional" to
           "professional." By focusing on visual hierarchy, embracing whitespace, maintaining
