@@ -39,7 +39,7 @@ export function Portfolio() {
               className="flex flex-wrap gap-2"
             >
               {PROJECT_FILTERS.map((item) => (
-                <li key={item}>
+                <li key={item} role="presentation">
                   <button
                     type="button"
                     role="tab"
@@ -49,7 +49,7 @@ export function Portfolio() {
                       "rounded-md px-4 py-2 text-[11px] font-medium tracking-[0.12em] uppercase transition-all duration-300",
                       filter === item
                         ? "bg-gradient-brand text-brand-foreground shadow-brand"
-                        : "neu-card text-subtle hover:text-brand",
+                        : "neu-card text-body hover:text-brand",
                     )}
                   >
                     {item}
@@ -110,16 +110,16 @@ export function Portfolio() {
                         />
                       </h3>
                       {project.tools && project.tools.length > 0 && (
-                        <div className="mt-4 flex flex-wrap gap-2">
+                        <ul aria-label="Technologies used" className="mt-4 flex flex-wrap gap-2">
                           {project.tools.map((tool) => (
-                            <span
+                            <li
                               key={tool}
-                              className="text-[10px] uppercase tracking-wider bg-subtle/10 text-subtle px-2 py-1 rounded-md"
+                              className="text-[10px] uppercase tracking-wider bg-subtle/10 text-body px-2 py-1 rounded-md"
                             >
                               {tool}
-                            </span>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       )}
                     </div>
                   </a>
@@ -152,16 +152,16 @@ export function Portfolio() {
                         <span className="min-w-0">{project.title}</span>
                       </h3>
                       {project.tools && project.tools.length > 0 && (
-                        <div className="mt-4 flex flex-wrap gap-2">
+                        <ul aria-label="Technologies used" className="mt-4 flex flex-wrap gap-2">
                           {project.tools.map((tool) => (
-                            <span
+                            <li
                               key={tool}
-                              className="text-[10px] uppercase tracking-wider bg-subtle/10 text-subtle px-2 py-1 rounded-md"
+                              className="text-[10px] uppercase tracking-wider bg-subtle/10 text-body px-2 py-1 rounded-md"
                             >
                               {tool}
-                            </span>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       )}
                     </div>
                   </div>
