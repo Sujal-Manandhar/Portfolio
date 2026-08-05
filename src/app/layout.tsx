@@ -14,6 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sujalmdhr.com.np"),
   title: "Sujal Manandhar — Developer & UI/UX Designer Portfolio",
   description:
     "Portfolio of Sujal Manandhar, developer and UI/UX designer specializing in scalable web apps and beautiful interfaces.",
@@ -32,11 +33,11 @@ export const metadata: Metadata = {
     title: "Sujal Manandhar — Developer & UI/UX Designer Portfolio",
     description:
       "Portfolio of Sujal Manandhar, developer and UI/UX designer specializing in scalable web apps and beautiful interfaces.",
-    url: "https://sujalmanandhar.com",
+    url: "https://www.sujalmdhr.com.np",
     siteName: "Sujal Manandhar Portfolio",
     images: [
       {
-        url: "/favicon.svg",
+        url: "/favicon.png",
         width: 800,
         height: 600,
       },
@@ -48,10 +49,11 @@ export const metadata: Metadata = {
     title: "Sujal Manandhar — Developer & UI/UX Designer",
     description:
       "Portfolio of Sujal Manandhar, developer and UI/UX designer specializing in scalable web apps and beautiful interfaces.",
-    images: ["/favicon.svg"],
+    images: ["/favicon.png"],
   },
   icons: {
     icon: "/favicon.svg",
+    apple: "/favicon.png",
   },
 };
 
