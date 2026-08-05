@@ -220,7 +220,7 @@
 /* underline sweep for nav links */
 @utility nav-link {
   position: relative;
-  color: var(--body);
+  color: var(--heading);
   transition: color 0.3s ease;
 
   &::after {

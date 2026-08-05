@@ -24,10 +24,10 @@ export function Hero() {
     <section id="home" className="relative overflow-hidden pt-28 pb-12 lg:pt-28 lg:pb-16">
       <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.8,
+            duration: 0.45,
             ease: [0.22, 1, 0.36, 1],
           }}
         >
@@ -85,11 +85,11 @@ export function Hero() {
 
         <motion.div
           className="relative mx-auto w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[400px] xl:max-w-[440px]"
-          initial={{ opacity: 0, scale: 0.94 }}
+          initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.9,
-            delay: 0.15,
+            duration: 0.55,
+            delay: 0.1,
             ease: [0.22, 1, 0.36, 1],
           }}
         >
